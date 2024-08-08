@@ -19,6 +19,7 @@
             position: relative;
             width: 100%;
             height: 827px;
+            z-index: 1; /* Ensure the Tableau visualization is beneath the button */
         }
         a {
             color: #0073e6;
@@ -38,6 +39,10 @@
             border-radius: 5px;
             text-align: center;
             text-decoration: none;
+            position: absolute; /* Position the button absolutely */
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            z-index: 2; /* Ensure the button is on top of other elements */
         }
         .back-button:hover {
             background-color: #005bb5;
