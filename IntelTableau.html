@@ -14,12 +14,13 @@
         }
         h1 {
             color: #333;
+            display: flex; /* Flex container for heading and button */
+            align-items: center; /* Vertically center align items */
         }
         .tableauPlaceholder {
-            position: relative;
             width: 100%;
             height: 827px;
-            z-index: 1; /* Ensure the Tableau visualization is beneath the button */
+            margin-top: 20px; /* Space between heading/button and visualization */
         }
         a {
             color: #0073e6;
@@ -29,8 +30,7 @@
             text-decoration: underline;
         }
         .back-button {
-            display: inline-block;
-            margin-top: 20px;
+            margin-left: 20px; /* Space between heading and button */
             padding: 10px 15px;
             font-size: 16px;
             color: #fff;
@@ -39,10 +39,6 @@
             border-radius: 5px;
             text-align: center;
             text-decoration: none;
-            position: absolute; /* Position the button absolutely */
-            top: 100px; /* Adjust as needed */
-            left: 20px; /* Adjust as needed */
-            z-index: 2; /* Ensure the button is on top of other elements */
         }
         .back-button:hover {
             background-color: #005bb5;
@@ -50,7 +46,10 @@
     </style>
 </head>
 <body>
-    <h1>Interactive Tableau Visualization</h1>
+    <h1>
+        Interactive Tableau Visualization
+        <a href="index.html" class="back-button">Back to Home</a>
+    </h1>
     <!-- Tableau embed code -->
     <div class='tableauPlaceholder' id='viz1723115488789'>
         <noscript>
@@ -84,6 +83,5 @@
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
-    <a href="index.html" class="back-button">Back to Home</a>
 </body>
 </html>
