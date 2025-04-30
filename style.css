@@ -64,7 +64,7 @@ p {
     padding: 10px 18px;
     font-size: 16px;
     background-color: #0073e6;
-    color: black; /* Updated from white */
+    color: black !important; /* Updated from white */
     border: none;
     border-radius: 6px;
     text-decoration: none;
@@ -73,7 +73,7 @@ p {
 
 .button:hover {
     background-color: #005bb5;
-    color: black; /* Ensures it stays black on hover */
+    color: black !important; /* Ensures it stays black on hover */
 }
 
 /* Footer */
