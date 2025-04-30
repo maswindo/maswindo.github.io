@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Analysis Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Hotaling | Data Projects Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
             background-color: #f4f4f4;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            color: #333;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
         }
         .project {
             margin-bottom: 40px;
+        }
+        .project h2 {
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+        .project p {
+            margin-bottom: 10px;
+        }
+        .project a {
+            color: #0073e6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Data Analysis Projects</h1>
-        
-        <div class="project">
-            <h2>Interactive Tableau Visualization</h2>
-            <p>This project features an interactive Tableau visualization of the Intel energy consumption data. You can view the detailed visualization on the following page:</p>
-            <a href="IntelTableau.html">View Tableau Visualization</a>
-        </div>
-        
-        <div class="project">
-            <h2>Excel Data Analysis Project</h2>
-            <p>This project involves an in-depth analysis of Grammy Awards data using Excel. You can view the details of this project and explore the key insights on the following page:</p>
-            <a href="excel_project.html">View Excel Data Analysis Project</a>
-        </div>
+        <header>
+            <h1>Mason Hotaling</h1>
+            <p>Computer Science Graduate | Inventory Manager | Data Analyst-in-Training</p>
+            <p>Focused on building automated systems, actionable dashboards, and clean, scalable data tools.</p>
+        </header>
+
+        <section class="project">
+            <h2>📊 Tableau: Intel Energy Dashboard</h2>
+            <p>An interactive Tableau dashboard exploring Intel's energy consumption. Built using real-world datasets and data storytelling techniques.</p>
+            <a href="IntelTableau.html">View Project</a>
+        </section>
+
+        <section class="project">
+            <h2>📈 Excel: Grammy Awards Data Analysis</h2>
+            <p>A full Excel-based analysis of Grammy Awards data. Includes pivot tables, visuals, and insights hosted through Office 365 embed.</p>
+            <a href="excel_project.html">View Project</a>
+        </section>
+
+        <section class="project">
+            <h2>🚚 Inventory Management System (Coming Soon)</h2>
+            <p>Built a fully automated Google Sheets system to manage inventory across 4 warehouses and 30+ service trucks. Includes stock forecasting, vendor tracking, and reconciliation workflows.</p>
+        </section>
+
+        <section class="project">
+            <h2>💸 Vendor Spend & Invoice Tracker (Coming Soon)</h2>
+            <p>Automated invoice entry, line-item analysis, and vendor comparison tools developed in Excel and Tableau. Tracks monthly spending trends and material usage.</p>
+        </section>
     </div>
 </body>
 </html>
